@@ -28,3 +28,8 @@ public class StudentGrade {
         sc.close();
     }
 }
+Enter student name: Sameera
+Enter marks: 85
+
+Student Name: Sameera
+Grade: B
