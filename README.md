@@ -1,16 +1,30 @@
-## Hi there 👋
+import java.util.Scanner;
 
-<!--
-**sameeraguduru12-byte/sameeraguduru12-byte** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+public class StudentGrade {
+    public static void main(String[] args) {
 
-Here are some ideas to get you started:
+        Scanner sc = new Scanner(System.in);
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+        System.out.print("Enter student name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter marks: ");
+        int marks = sc.nextInt();
+
+        System.out.println("\nStudent Name: " + name);
+
+        if (marks >= 90) {
+            System.out.println("Grade: A");
+        } else if (marks >= 75) {
+            System.out.println("Grade: B");
+        } else if (marks >= 60) {
+            System.out.println("Grade: C");
+        } else if (marks >= 50) {
+            System.out.println("Grade: D");
+        } else {
+            System.out.println("Grade: F");
+        }
+
+        sc.close();
+    }
+}
